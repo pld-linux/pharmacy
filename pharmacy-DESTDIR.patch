@@ -1,0 +1,21 @@
+diff -Nru pharmacy-0.2.1.orig/docs/Makefile.am pharmacy-0.2.1/docs/Makefile.am
+--- pharmacy-0.2.1.orig/docs/Makefile.am	Fri May 26 20:33:08 2000
++++ pharmacy-0.2.1/docs/Makefile.am	Fri May 26 20:34:10 2000
+@@ -32,13 +32,13 @@
+ 	db2html index.sgml
+ 
+ install-data-local: index/index.html
+-	$(mkinstalldirs) $(htmldir)
++	$(mkinstalldirs) $(DESTDIR)$(htmldir)
+ #        $(mkinstalldirs) $(gnome_intro_helpdir)/pix
+-	$(INSTALL_DATA) $(srcdir)/topic.dat $(htmldir)/topic.dat
+-#	$(INSTALL_DATA) $(srcdir)/index/book1.html $(htmldir)/index.html
++	$(INSTALL_DATA) $(srcdir)/topic.dat $(DESTDIR)$(htmldir)/topic.dat
++#	$(INSTALL_DATA) $(srcdir)/index/book1.html $(DESTDIR)$(htmldir)/index.html
+ 	for file in $(PHARMACY_HTML_FILES); do \
+ 	  basefile=`echo $$file | sed -e 's,^.*/,,'`; \
+-	  $(INSTALL_DATA) $(srcdir)/$$file $(htmldir)/$$basefile; \
++	  $(INSTALL_DATA) $(srcdir)/$$file $(DESTDIR)$(htmldir)/$$basefile; \
+ 	done
+ #	for file in $(GNOME_INTRO_PICTURES); do \
+ #	  basefile=`echo $$file | sed -e 's,^.*/,,'`; \
