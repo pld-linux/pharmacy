@@ -1,13 +1,14 @@
 Summary:	Pharmacy intends to be a GNOME compliant front-end to CVS
 Name:		pharmacy
 Version:	0.2.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Communications
+Group(de):	Applikationen/Kommunikation
 Group(pl):	Aplikacje/Komunikacja
 Source0:	http://home.earthlink.net/~nawalker/pharmacy/%{name}-%{version}.tar.gz
 Patch0:		%{name}-DESTDIR.patch
-URL:		http://home.earthlink.net/~nawalker/pharmacy/index.html
+URL:		http://www.cvs.com/
 BuildRequires:	automake
 BuildRequires:	gettext-devel
 BuildRequires:	gnome-libs-devel
@@ -28,7 +29,6 @@ for the lazy power-user.
 %build
 gettextize --copy --force
 automake
-LDFLAGS="-s"; export LDFLAGS
 %configure
 %{__make}
 
