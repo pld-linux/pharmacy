@@ -1,0 +1,8 @@
+diff -urN pharmacy-0.3.orig/src/pharmacy.desktop pharmacy-0.3/src/pharmacy.desktop
+--- pharmacy-0.3.orig/src/pharmacy.desktop	2000-10-06 22:49:12.000000000 +0200
++++ pharmacy-0.3/src/pharmacy.desktop	2004-07-04 17:42:54.427346360 +0200
+@@ -13,3 +13,4 @@
+ Icon=pharmacy.png
+ Terminal=0
+ Type=Application
++Categories=GTK;GNOME;Development;RevisionControl;
