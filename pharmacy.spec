@@ -35,7 +35,7 @@ leniwych power-user.
 
 %build
 rm -f missing acinclude.m4
-libtoolize --copy --force
+%{__libtoolize}
 gettextize --copy --force
 aclocal -I macros
 %{__autoconf}
