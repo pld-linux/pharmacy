@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/pharmacy/%{name}-%{version}.tar.gz
+# Source0-md5:	4fed3c8df18556aaaa43aa8028119b56
 Patch0:		%{name}-DESTDIR.patch
 Patch1:		%{name}-am_fix.patch
 URL:		http://pharmacy.sourceforge.net/
