@@ -1,0 +1,15 @@
+--- ./src/Makefile.am.org	Tue Oct  2 01:33:29 2001
++++ ./src/Makefile.am	Tue Oct  2 01:34:27 2001
+@@ -50,10 +50,10 @@
+ ## pharmacybitmapsdir = $(datadir)/pixmaps
+ ## pharmacybitmaps_DATA = $(pharmacy_BITMAPS)
+ 
+-#CFLAGS += $(GTK_CFLAGS) -Wall
++#CFLAGS = $(GTK_CFLAGS) -Wall
+ #LIBS += $(GTK_LIBS) $(X_LIBS)
+ 
+-CFLAGS += $(DEBUG)
++CFLAGS = $(DEBUG)
+ 
+ sysdir = $(datadir)/gnome/apps/Development
+ sys_DATA = pharmacy.desktop 
