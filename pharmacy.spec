@@ -37,7 +37,7 @@ Aktualnie dostarcza ograniczony interfejs do komend CVS'u oraz
 %patch1 -p1
 
 %build
-rm -f missing
+rm -f missing acinclude.m4
 libtoolize --copy --force
 gettextize --copy --force
 aclocal -I macros
