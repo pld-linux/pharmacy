@@ -16,7 +16,6 @@ BuildRequires:	gnome-libs-devel
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 Pharmacy intends to be a GNOME compliant front-end to CVS. Currently,
