@@ -1,14 +1,14 @@
 Summary:	Pharmacy intends to be a GNOME compliant front-end to CVS
-Summary(pl):	Pharmacy stara siê byæ zgodnym z GNOME front-end'em do CVS
+Summary(pl):	Pharmacy stara siê byæ zgodnym z GNOME frontendem do CVS
 Name:		pharmacy
 Version:	0.3
 Release:	1
 License:	GPL
 Group:		Applications/Communications
-Source0:	http://prdownloads.sourceforge.net/pharmacy/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/pharmacy/%{name}-%{version}.tar.gz
 Patch0:		%{name}-DESTDIR.patch
 Patch1:		%{name}-am_fix.patch
-URL:		http://pharmacy.sourceforge.net
+URL:		http://pharmacy.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
@@ -16,16 +16,15 @@ BuildRequires:	gnome-libs-devel
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-
 %description
 Pharmacy intends to be a GNOME compliant front-end to CVS. Currently,
 it provides a limited user interface to CVS commands and a "console"
 for the lazy power-user.
 
 %description -l pl
-Pharmacy stara siê byæ zgodnym z GNOME front-end'em do CVS. Aktualnie
-dostarcza ograniczony interfejs do komend CVS'u oraz "konsolê" dla
-leniwych power-user.
+Pharmacy stara siê byæ zgodnym z GNOME frontendem do CVS. Aktualnie
+dostarcza ograniczony interfejs do komend CVS-u oraz "konsolê" dla
+leniwych power-userów.
 
 %prep
 %setup -q
@@ -48,7 +47,6 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	sysdir=%{_applnkdir}/Utilities
-
 
 %find_lang %{name} --with-gnome
 
