@@ -24,9 +24,9 @@ it provides a limited user interface to CVS commands and a "console"
 for the lazy power-user.
 
 %description -l pl
-Pharmacy stara siê byæ zgodnym z GNOME front-end'em do CVS.
-Aktualnie dostarcza ograniczony interfejs do komend CVS'u oraz
-"konsolê" dla leniwych power-user.
+Pharmacy stara siê byæ zgodnym z GNOME front-end'em do CVS. Aktualnie
+dostarcza ograniczony interfejs do komend CVS'u oraz "konsolê" dla
+leniwych power-user.
 
 %prep
 %setup -q
