@@ -2,7 +2,7 @@ Summary:	Pharmacy intends to be a GNOME compliant front-end to CVS
 Summary(pl):	Pharmacy stara siê byæ zgodnym z GNOME frontendem do CVS
 Name:		pharmacy
 Version:	0.3
-Release:	3
+Release:	4
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/pharmacy/%{name}-%{version}.tar.gz
