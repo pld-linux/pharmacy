@@ -50,4 +50,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc *.gz
 %attr(755,root,root) %{_bindir}/pharmacy
 %{_applnkdir}/Utilities/pharmacy.desktop
-%{_datadir}/pixmaps/*
+%{_pixmapsdir}/*
