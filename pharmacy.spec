@@ -5,19 +5,20 @@ Release:	1
 License:	GPL
 Group:		Applications/Communications
 Group(pl):	Aplikacje/Komunikacja
+Group(pl):	Aplikacje/Komunikacja
 URL:		http://home.earthlink.net/~nawalker/pharmacy.html
 Source0:	http://home.earthlink.net/~nawalker/%{name}-%{version}.tar.gz
-Patch0:	%{name}-DESTDIR.patch
-Patch1:	%{name}-applnkdir.patch
+Patch0:		%{name}-DESTDIR.patch
+Patch1:		%{name}-applnkdir.patch
 Requires:	gtk+ >= 1.1.12
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define _prefix /usr/X11R6
 
 %description
-Pharmacy intends to be a GNOME compliant front-end to CVS. Currently, it
-provides a limited user interface to CVS commands and a "console" for the
-lazy power-user.
+Pharmacy intends to be a GNOME compliant front-end to CVS. Currently,
+it provides a limited user interface to CVS commands and a "console"
+for the lazy power-user.
 
 %prep
 %setup -q
@@ -30,6 +31,7 @@ automake
 make
 
 %install
+rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install-strip
 
 %clean
