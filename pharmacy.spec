@@ -50,7 +50,6 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	sysdir=%{_applnkdir}/Utilities
 
-gzip -9nf AUTHORS ChangeLog NEWS README TODO
 
 %find_lang %{name} --with-gnome
 
@@ -59,7 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc *.gz
+%doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/pharmacy
 %{_applnkdir}/Utilities/pharmacy.desktop
 %{_pixmapsdir}/*
