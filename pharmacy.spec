@@ -16,6 +16,7 @@ BuildRequires:	automake
 BuildRequires:	gettext-devel
 BuildRequires:	gnome-libs-devel
 BuildRequires:	gtk+-devel >= 1.1.12
+BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -47,6 +48,7 @@ automake -a -c
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	sysdir=%{_applnkdir}/Utilities
