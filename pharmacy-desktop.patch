@@ -1,8 +1,29 @@
 diff -urN pharmacy-0.3.orig/src/pharmacy.desktop pharmacy-0.3/src/pharmacy.desktop
 --- pharmacy-0.3.orig/src/pharmacy.desktop	2000-10-06 22:49:12.000000000 +0200
 +++ pharmacy-0.3/src/pharmacy.desktop	2004-07-04 17:42:54.427346360 +0200
-@@ -13,3 +13,4 @@
+@@ -1,15 +1,19 @@
+ [Desktop Entry]
++Encoding=UTF-8
+ Name=Pharmacy
+-Name[pt_BR]=Farmácia
+ Name[fr]=Pharmacy
+ Name[ja]=Pharmacy
++Name[pt_BR]=FarmÃ¡cia
+ Comment=GNOME Front End to CVS
+-Comment[pt_BR]=Front End do Gnome para CVS
+-Comment[es]=Interfaz gráfica de Gnome para el sistema CVS
+-Comment[fr]=Interface graphique GNOME au système CVS
+-Comment[ja]=GNOMEÈÇCVS¥Õ¥í¥ó¥È¥¨¥ó¥É
++Comment[es]=Interfaz grÃ¡fica de GNOME para el sistema CVS
++Comment[fr]=Interface graphique GNOME au systÃ¨me CVS
++Comment[ja]=GNOMEç‰ˆCVSãƒ•ãƒ­ãƒ³ãƒˆã‚¨ãƒ³ãƒ‰
++Comment[pl]=Frontend do CVS dla GNOME
++Comment[pt_BR]=Front End do GNOME para CVS
+ Comment[wa]=Eterface grafike di GNOME po-z eployi li sistinme CVS
+ Exec=pharmacy
  Icon=pharmacy.png
- Terminal=0
+-Terminal=0
++Terminal=false
  Type=Application
 +Categories=GTK;GNOME;Development;RevisionControl;
++# vi: encoding=utf-8
