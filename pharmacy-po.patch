@@ -1,0 +1,22 @@
+diff -u pharmacy-0.3/po.orig/fr.po pharmacy-0.3/po/fr.po
+--- pharmacy-0.3/po.orig/fr.po	Sun Apr 22 22:15:17 2001
++++ pharmacy-0.3/po/fr.po	Tue Aug  3 16:44:41 2004
+@@ -2,7 +2,6 @@
+ # Copyright (C) 1998 Free Software Foundation, Inc.
+ # Vincent Renardias <vincent@waw.com>, 1998.
+ #
+-#, fuzzy
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: pharmacy VERSION\n"
+diff -u pharmacy-0.3/po.orig/ja.po pharmacy-0.3/po/ja.po
+--- pharmacy-0.3/po.orig/ja.po	Sun Apr 22 22:15:17 2001
++++ pharmacy-0.3/po/ja.po	Tue Aug  3 16:44:40 2004
+@@ -2,7 +2,6 @@
+ # Copyright (C) 1999 Free Software Foundation, Inc.
+ # Yuusuke Tahara <tahara@gnome.gr.jp>, 1999.
+ #
+-#, fuzzy
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: pharmacy 0.2.1\n"
