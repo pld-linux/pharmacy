@@ -9,6 +9,7 @@ Group(de):	Applikationen/Kommunikation
 Group(pl):	Aplikacje/Komunikacja
 Source0:	http://prdownloads.sourceforge.net/pharmacy/%{name}-%{version}.tar.gz
 Patch0:		%{name}-DESTDIR.patch
+Patch1:		%{name}-am_fix.patch
 URL:		http://pharmacy.sourceforge.net
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -32,15 +33,16 @@ Aktualnie dostarcza ograniczony interfejs do komend CVS'u oraz
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
-rm -rf missing
-#libtoolize --copy --force
+rm -f missing
+libtoolize --copy --force
 gettextize --copy --force
 aclocal -I macros
-#autoconf
+autoconf
 automake -a -c
-%configure2_13
+%configure
 %{__make}
 
 %install
