@@ -1,5 +1,5 @@
 Summary:	Pharmacy intends to be a GNOME compliant front-end to CVS
-Summary(pl):	Pharmacy stara siê byæ zgodnym z GNOME frontendem do CVS
+Summary(pl.UTF-8):   Pharmacy stara siÄ™ byÄ‡ zgodnym z GNOME frontendem do CVS
 Name:		pharmacy
 Version:	0.3
 Release:	5
@@ -24,10 +24,10 @@ Pharmacy intends to be a GNOME compliant front-end to CVS. Currently,
 it provides a limited user interface to CVS commands and a "console"
 for the lazy power-user.
 
-%description -l pl
-Pharmacy stara siê byæ zgodnym z GNOME frontendem do CVS. Aktualnie
-dostarcza ograniczony interfejs do komend CVS-u oraz "konsolê" dla
-leniwych power-userów.
+%description -l pl.UTF-8
+Pharmacy stara siÄ™ byÄ‡ zgodnym z GNOME frontendem do CVS. Aktualnie
+dostarcza ograniczony interfejs do komend CVS-u oraz "konsolÄ™" dla
+leniwych power-userÃ³w.
 
 %prep
 %setup -q
